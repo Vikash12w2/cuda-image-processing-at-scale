@@ -1,1 +1,4 @@
-
+CUDA kernel launched successfully
+Device memory allocated
+Kernel executed and data copied back to host
+GPU computation completed
