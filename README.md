@@ -3,7 +3,7 @@
 ## Overview
 This project demonstrates GPU-based image processing using CUDA. The application
 processes a large number of images in parallel by applying pixel-wise operations
-using CUDA kernels.
+using custom CUDA kernels.
 
 ## Requirements
 - NVIDIA GPU
@@ -11,22 +11,25 @@ using CUDA kernels.
 - nvcc compiler
 
 ## Build Instructions
-To compile the project, run:
+To compile the project, run the following commands in the terminal:
 make clean
 make build
 
 ## Run Instructions
-To execute the program, run:
-./image_processing --input data/input --output data/output --filter normalize
+Before running the project for the first time, make the run script executable:
+chmod +x run.sh
+
+Then execute the project using:
+./run.sh
 
 ## Command Line Arguments
---input   : Directory containing input images
---output  : Directory to store processed images
---filter  : Image processing filter to apply
+--input   : Directory containing input images  
+--output  : Directory to store processed images  
+--filter  : Image processing filter to apply  
 
 ## GPU Implementation
-CUDA kernels are used to parallelize image processing operations across
-many images and pixels.
+CUDA kernels are used to parallelize image processing operations across multiple
+images and pixels on the GPU.
 
 ## Output
 Processed images and execution logs are written to the output directory.
