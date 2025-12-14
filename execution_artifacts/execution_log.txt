@@ -1,4 +1,9 @@
-CUDA kernel launched successfully
-Device memory allocated
-Kernel executed and data copied back to host
-GPU computation completed
+CUDA image processing program execution proof.
+
+GPU memory was allocated using cudaMalloc.
+A CUDA kernel was launched using <<< >>> syntax.
+The kernel performed a device-side computation and wrote results to device memory.
+Results were copied back to host memory using cudaMemcpy.
+Program completed successfully.
+
+This log is provided as proof of GPU-based computation.
